@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    width: 100vw;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 58px rgba(0, 0, 0, 0.11);
+    padding: 1rem 2rem;
+    justify-content: space-between;
+
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    box-shadow: 10px 10px 58px rgba(0, 0, 0, 0.11);
+    padding: 21px 21px 21px 35px;
+    font-family: "Roboto";
+}

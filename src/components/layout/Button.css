@@ -1,0 +1,19 @@
+.button {
+    padding: 1rem;
+    border: 1px solid #060606;
+    border-radius: 10px;
+   
+}
+
+.card-button {
+    background-color: var(--purple);
+    color: #fff;
+    width: 100%;
+}
+
+.user-button {
+    background-color: #fff;
+    width: 7rem;
+
+
+}

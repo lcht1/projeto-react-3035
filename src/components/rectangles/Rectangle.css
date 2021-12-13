@@ -1,0 +1,76 @@
+body {
+    position: relative;
+  }
+  .rectangles {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+  .rectangles > div {
+    position: absolute;
+  }
+  
+  .rectangle49 {
+    width: 272px;
+    height: 355px;
+    left: 1006px;
+    top: -200px;
+    right: 91px;
+  
+    border: 5px solid #d7d1dd;
+    border-radius: 40px;
+  }
+  
+  
+  
+  .rectangle43 {
+      position: absolute;
+      width: 169.6px;
+      height: 169.6px;
+      left: 1275px;
+      top: 399px;
+      border: 5px solid #D7D1DD;
+      box-sizing: border-box;
+      border-radius: 40px
+  }
+  
+  .rectangle44 {
+    position: absolute;
+    width: 169.6px;
+    height: 169.6px;
+    left: 1275px;
+    top: 205px;
+  
+    border: 5px solid #d7d1dd;
+    box-sizing: border-box;
+    border-radius: 40px;
+  }
+  
+  .rectangle45 {
+      position: absolute;
+      width: 169.6px;
+      height: 169.6px;
+      left: 1275px;
+      bottom: -137px;
+    
+      border: 5px solid #d7d1dd;
+      border-radius: 40px;
+    
+    box-sizing: border-box;
+    
+    }
+  
+    .rectangle48{
+      position: absolute;
+      width: 369px;
+      height: 369px;
+      left: 837px;
+      top: 424px;
+      
+      border: 5px solid #D7D1DD;
+      box-sizing: border-box;
+      border-radius: 40px;
+    }
