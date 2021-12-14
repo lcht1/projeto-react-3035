@@ -10,10 +10,9 @@ function MainNavigation() {
         <header className='header'>
             <div > <a href={'/'}> <img src={Logo}></img> </a></div>
             <nav>
-                
-                    <Button className={`user-button`}><Link to='/'>Fazer Login</Link></Button>
-                    <Button className={`user-button`}><Link to='/signup'>Cadastre-se</Link></Button>
-                
+
+                <Button className={`user-button`}><Link to='/signup'>Cadastre-se</Link></Button>
+
             </nav>
 
 

@@ -14,33 +14,33 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const cript = btoa("3035teachapp : 3035teach-secret");
-
   const history = useHistory();
   useEffect(() => {
     if (localStorage.getItem("user-info")) {
+      
       history.push("");
+
     }
   }, []);
   async function login(e) {
     e.preventDefault();
-    const basicAuth = "Basic 3035teachapp:3035teach-secret";
+
+    const basicAuth = `Basic ${btoa('3035teachapp:3035teach-secret')}`;
     const urlPost = `https://back-3035teach.herokuapp.com/oauth/token?username=${email}&password=${password}&grant_type=password`;
 
-    debugger;
-    axios.defaults.headers.common["Authorization"] = "Basic " + cript;
+    axios.defaults.headers.common["Authorization"] = basicAuth
     axios.defaults.headers.common["Content-Type"] = "application/json";
     await axios.post(urlPost, {});
+    window.location.replace('https://www.3035tech.com/#/')
 
-    debugger;
+
   }
 
   return (
     <>
-      {/* <h2 className="title"> Faça login em sua conta </h2> */}
 
       <Card>
-        <form className="form" onSubmit={login}>
+        <form className="form" id="login" method="post" action="/" onSubmit={login}>
           <div className="card-title">
             <h3>Login</h3>
           </div>
@@ -69,7 +69,7 @@ function Login() {
                   type="password"
                   required
                   id="password"
-                  onChange={(e) => setPassword(e.target.value)} 
+                  onChange={(e) => setPassword(e.target.value)}
                   placeholder="*****"
                 />
               </div>
